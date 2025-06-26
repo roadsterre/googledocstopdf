@@ -32,7 +32,7 @@ print("✅ Document downloaded successfully.")
 # Matches start of lines like "1. Something", "2. Another", etc.
 raw_chapters = re.split(r"(?=^\d+\.\s)", text, flags=re.MULTILINE)
 chapters = [ch.strip() for ch in raw_chapters if ch.strip()]
-print(chapters)
+
 # Step 4: Clean and organize chapters
 chapter_data = []
 for ch in chapters:
